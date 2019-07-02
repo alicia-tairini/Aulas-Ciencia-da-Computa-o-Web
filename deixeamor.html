@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros & Relatos</title>
+    <link rel="stylesheet" href="css/menu.css"/>
+    <link rel="stylesheet" href="css/deixeamor.css"/>
+    
+    <!-- Ícone -->
+	<link rel = "shortcut icon" href = "image/IconBook02.ico"/>
+    <!-- Fim Ícone -->
+</head>
+<body>
+    <input type="checkbox" id="btn_menu">
+    <label for="btn_menu">&#9776</label>
+    <nav class = "menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="resenhas.html">RESENHAS</a></li>
+            <li><a href="tag.html">TAG'S</a></li>
+            <li><a href="deixeamor.html">DEIXE AMOR</a></li>
+            <li><a href="#">VISITE-NOS</a> 
+                <ul>
+                    <li><a href="https://www.instagram.com/livros_e_relatos/?hl=pt-br" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/Livros-Relatos-515953545511030/" target="_blank">Facebook</a></li>
+                </ul>
+            </li>  
+        </ul>
+    </nav>
+    <main>
+        <h1>Deixe Seu Amor</h1>
+        <form name"myForm" action="mailto:aliciatairini@outlook.com" onsubmit="return validateForm();"
+         method="POST" oninput="calculaIdade();" >
+            <fieldset id="usuario">
+                
+                <p>Nome: <input type="text" name="tName" id="cName" size="20" maxlength="30"/></p> 
+               
+                <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8"  maxlength="10" placeholder="Min. 8 digitos"/></p>  
+                <p>E-Mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>   
+                    <fieldset id="sexo"><legend class="bordas">Sexo</legend>
+                        <input type="radio" name="tSexo" id="cMasc"/>Masculino</br>
+                        <input type="radio" name="tSexo" id="cFem" checked/>Feminimo</br>
+                    </fieldset>
+                <p>Data de nascimento: <input  type="date" name="tNasc" id="cNasc"/></p>
+                <p>Idade: <input type="text" name="tIdade" id="cIdade" size="1" readonly></p>
+                <p>Estado:
+                <select name="tEst" id="cEst">
+                    <option>Selecione seu estado</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Minas Gerais</option>
+                    <option>Paraná</option>
+                    <option>Santa Catarina</option>
+                    <option>Outros</option>
+                </select></p>
+              
+                <p id="msg">Mensagem:</p> <textarea name="tMsg" id="cMsg" cols="45" rows="8"></textarea>
+                <div id="enviarmsg" >
+                <input type="image" id="enviar" name="tEnviar" src="image/enviar.png" />  
+                </div> 
+            </fieldset>
+         </form>                
+    </main>
+    <footer class="rodape">
+        <ul class="icones-sociais">
+            <span> &copy; Alícia Tairini 2019 </span>
+            <li>
+                <a href="https://www.instagram.com/livros_e_relatos/?hl=pt-br" target="_blank" title="Instagran livros_e_relatos">
+                <img src="image/iconeinsta.png" alt "Icone do instagran"></a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/Livros-Relatos-515953545511030/" target="_blank" title="facebook livros_e_relatos">
+                <img src="image/iconeface.png" alt="Icone do facebook"></a>
+            </li>
+        </ul>
+        
+    </footer>
+    <script language="JavaScript" src="javascript/main.js"></script>  
+</body>
+</html>

@@ -1,0 +1,96 @@
+body{
+    background-color: #f7e5c2;
+    margin-bottom: 80px;
+    height:auto;
+}
+
+h1{
+    padding-top:50PX;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+form{
+    width: 650px;
+    margin: auto;
+}
+
+input, textarea, select{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 15pt;
+    background-color: #f1f1cd;
+    margin: 10px;
+}
+
+input:hover, textarea:hover, select:hover{
+    background-color: antiquewhite;
+}
+
+fieldset{
+    border-color: #990033;
+    margin: 10px;
+}
+
+fieldset#usuario{
+    box-shadow: 0px 0px 5px #5f4242;
+}
+
+fieldset#sexo{
+    font-size: 20px;
+    width: 150px;
+}
+
+.bordas{
+    background:#f7e5c2; 
+}
+p{
+    margin-left:8px; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+
+#enviarmsg{
+    margin-left: 88%;
+}
+
+
+@media (max-width:800px){
+    
+    h1{
+        font-size: 45pt;
+    }
+
+    input, textarea, select{
+        font-size: 10pt;
+    }
+
+    form{
+        width: 450px;
+        margin: auto;
+    }
+     
+    fieldset{
+        margin: 5px;
+    }
+    
+    
+    fieldset#sexo{
+        font-size: 15px;
+        width: 100px;
+    }
+    
+    p{
+        margin-left:4px; 
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 18px;
+    }
+    
+    #enviarmsg{
+        margin-left: 80%;
+    }
+
+}
